@@ -30,10 +30,14 @@ font-family: 'Gowun Batang', serif;
 /**** nav bar *****
 ******************/
 .navbar {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
-    padding-top: 30px;   
+    padding-top: 3vh;
+    background-color: white;
+    padding-bottom: 10px;
+    opacity: 0.8;
+    position: fixed;
 }
 
 .navbar i { /*hide the hamburger menu icon*/
@@ -42,8 +46,7 @@ font-family: 'Gowun Batang', serif;
 
 nav {
     flex:1;
-    /*position: fixed;*/
-    text-align: right;   
+    text-align: right;
 }
 
 nav ul li {
@@ -67,23 +70,13 @@ nav ul li a:hover {
 ******************/
 .row {
     text-align: center;
-    padding-bottom: 3vh; 
+    padding-bottom: 3vh;
+    padding-top: 5vh;
 }
 
 .row .titleText{
     width: 50%;
 }
-
-/* SAVE THE DATE
-.row h1 { 
-    font-family:  Libre Baskerville;
-    color: #353535;
-    letter-spacing: .4rem;
-    font-weight: lighter;
-    margin-bottom: 0;
-    margin-top: 10vh;
-    font-size: 4vw;
-}*/
 
 .row h5 { /*text: for the wedding*/
     font-family:  Libre Baskerville;
@@ -145,7 +138,7 @@ img.mobileImg {
 
 .reveal{
     position: relative;
-    transform: translateY(100px);
+    transform: translateY(70x);
     opacity: 0;
     transition: 2s all ease;
     padding: 0px;
@@ -154,6 +147,7 @@ img.mobileImg {
 .reveal.active{
     transform: translateY(0);
     opacity: 1;
+    height:100px
 }
 
 .fade { /* fading effect takes 3s */
@@ -169,6 +163,7 @@ img.mobileImg {
     padding: 50px;
     width: 500px;
     margin-top: 15x;
+    margin-bottom: 20vh;
 }
 
 .row-3 p {
@@ -177,38 +172,60 @@ img.mobileImg {
     font-size: 16px;
 }
 
+.row-3 .parent{ /**장남장녀, 혼주*/
+    margin-top: 12vh;
+    font-family: Gowun Batang;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    font-size: 17px;
+    color: #9B9B9B;
+}
 
 
-
+/******date******/
+.date{
+    background-color: #A88E8E;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 23vh;
+   font-family: Playfair Display;
+    font-weight: 100;
+    color: white;
+    font-size: 16px;
+}
 
 
 /****** gallery
 ******************/
 
-.gallery {
-    margin-top: 25vh;
+.gal {
     margin-bottom: 25vh;
 }
 
-.gallery h3 {
+.gal h3 {
     font-family: Libre Baskerville;
     letter-spacing: .1rem;
     color: #BBBBBB;
     font-weight: 300;
 }
 
-.gallery #smallImg{
+.gal .galleryView{
+    width: 770px;
+}
+
+.gal #smallImg{
     width: 250px;
     height: 250px;
     object-fit: cover; 
 }
+
 
 /****** location
 ******************/
 
 .location {
     margin-top: 20vh;
-    margin-bottom: 20vh;
+    margin-bottom: 28vh;
 }
 
 .location h3 {
@@ -313,7 +330,7 @@ footer {
     /*mobile main page*/
     .row{ /*title row*/
         width: 100%;
-        margin-top:8vh;
+        margin-top:5vh;
         margin-bottom: 2vh;
     }
     .row .titleText{
@@ -345,11 +362,15 @@ footer {
         padding:20px;
     }
     
-    .gallery #smallImg{
+    
+    .gal .galleryView{
+    width: 100%;
+    }
+    .gal #smallImg{
     width: 100px;
     height: 100px;
     object-fit: cover; 
-}
+    }
     
     
     .location .hotel{

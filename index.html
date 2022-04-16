@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Serif+KR:wght@200;300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&family=Roboto:wght@100;300;400;500;700&family=Whisper&display=swap" rel="stylesheet">
 <!----main style sheet----->
      <link rel="stylesheet" href="css/styles.css">
+<!----fancybox style sheet----->
+     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 <!----font awesome icons----->
      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <!----iconify----->
@@ -17,6 +19,11 @@
 </head>
 
 <body>
+    
+<!--FancyBox-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+    
 <div class="container">
     <!----Menu----->
     <div class="navbar"> 
@@ -24,14 +31,16 @@
             <ul id="menuList">
                 <div class="menuBlock">
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">LOCATION</a></li>
+                <li><a href="#galleryPage">GALLERY</a></li>
+                <li><a href="#direction">LOCATION</a></li>
                 </div>    
             </ul>
         </nav>
         <!---
             <i class="fa fa-bars" aria-hidden="true" onclick="toggleMenu()"></i> -->
     </div>
+    
+    
     <!----First Page---->
     <div class="row">
         <!--
@@ -65,22 +74,37 @@
     
 
     <center>
-        <div class="row-3">
-            <div class="fade" id="fade">
-        <p> 2012년 봄이 시작될 무렵 <br>
+    <div class="row-3">
+         <div class="fade" id="fade">
+            <p>2012년 봄이 시작될 무렵 <br>
             저희 두 사람의 인연이 시작됐습니다. <br><br>
             10년의 세월을 연인이자 친구로, 동반자이자 때로는 멘토로, 한국과 미국에서 서로의 곁을 지켜왔던 저희 두 사람이 2022년 여름의 끝자락에서 앞으로 함께할 평생을 약속하고자 합니다.<br> <br>
             선물과 같은 하루, 함께 축복해주시면 더 없는 기쁨으로 간직하겠습니다. </p>
-            </div>  
+          </div> 
+          <div class="parent">
+              <font size="3px">옥  환 · 윤니콜의 장남 </font><font size="4px">옥호석 </font><br>
+              <font size="3px">강신경 · 문정혜의 장녀 </font><font size="4px"> 강효정</font>
           </div>
-  
-        
+     </div>
+    </center>
+</div>  
 
-        
-    <div class="gallery">
-    <h3> GALLERY </h3>   <br><br>
-        <a data-fancybox="gallery" href="image/image1.JPG"><img src="image/image1.JPG" id="smallImg"></a>
+<section class="date">
+    <font face="Libre Baskerville" font size="5">2022. 06. 24 Sat </font><br><br>
+    Ceremony: 5:00 PM <font face="Roboto"> Plumeria Grove </font><br>
+    Reception: 6:30 PM <font face="Roboto">O Ke Kai Room</font><br><br>
+    <font face="Libre Baskerville"> Kahala Hotel &amp; Resort </font><br>
+    <font face="Helvetica">
+        Honolulu, Hawaii</font>
+</section>  
+  
+<div class="container">
+    <center>
+    <section id="galleryPage" class="gal">   
+    <h3> GALLERY </h3><br><br>
+        <div class="galleryView">
         <a data-fancybox="gallery" href="image/image2.JPG"><img src="image/image2.JPG" id="smallImg"></a>
+        <a data-fancybox="gallery" href="image/image1.JPG"><img src="image/image1.JPG" id="smallImg"></a>
         <a data-fancybox="gallery" href="image/image3%20(1).jpg"><img src="image/image3%20(1).jpg" id="smallImg"></a>
         <a data-fancybox="gallery" href="image/image4.JPG"><img src="image/image4.JPG" id="smallImg"></a>
         <a data-fancybox="gallery" href="image/image5.JPG"><img src="image/image5.JPG" id="smallImg"></a>
@@ -94,31 +118,29 @@
         <a data-fancybox="gallery" href="image/image13.JPG"><img src="image/image13.JPG" id="smallImg"></a> 
         <a data-fancybox="gallery" href="image/image14.JPG"><img src="image/image14.JPG" id="smallImg"></a> 
         <a data-fancybox="gallery" href="image/image15.JPG"><img src="image/image15.JPG" id="smallImg"></a> 
-    </div>
-    
-    
-    <div class="location">
+        </div>
+    </section> 
+
+        
+ <section id="location" class="location">   
         <h3> LOCATION </h3>
         <img src="image/kahalaHotel.jpg" class="hotel">
         <div class="text">
             <font size="4px" color="7990AD"><b>The Kahala Hotel &amp; Resort </b></font><br>
        
             <li><span class="iconify" data-icon="majesticons:map-marker"> </span> 5000 Kahala Ave, Honolulu, HI 96816</li>
-            <li><span class="iconify" data-icon="fluent:call-48-filled"></span>  (808) 369-9471 </li>
-            
+            <li><span class="iconify" data-icon="fluent:call-48-filled"></span>  (808) 369-9471 </li>  
+        </div>
+        <div class="direction">
             <br><br>
             Google Dir to be added
-            <!--
-            <li><span class="iconify" data-icon="majesticons:globe-earth-2"></span> <a href="https://www.kahalaresort.com/"> Visit website </a></li>-->
-        </div>
-        
-        <div class="direction">
-        </div>
-
-    </div>    
+        </div>  
+    </section>
     
-    </center>
-</div> <!---end of the container--->
+ <br><br><br> To be added: contact <br><br> <br><br><br>   
+</center>
+</div>
+    <!---end of the container--->
     
 <!----js scripts----->
     <script type="text/javascript" src="js/script.js"> </script>
