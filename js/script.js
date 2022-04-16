@@ -19,6 +19,7 @@ function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
+      
     var elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
@@ -41,10 +42,10 @@ window.addEventListener("scroll", function() {showFunction()});
 
 function showFunction() 
 {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        document.getElementById("toptexts2").style.display = "block";
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById("fade").style.display = "block";
     } else {
-        document.getElementById("toptexts2").style.display = "none";
+        document.getElementById("fade").style.display = "none";
     }
 }
 

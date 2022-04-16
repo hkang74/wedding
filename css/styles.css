@@ -156,7 +156,7 @@ img.mobileImg {
     opacity: 1;
 }
 
-.toptexts2 { /* fading effect takes 3s */
+.fade { /* fading effect takes 3s */
    animation: fadeEffect 3s; 
 }
     
@@ -180,6 +180,8 @@ img.mobileImg {
 
 
 
+
+
 /****** gallery
 ******************/
 
@@ -195,6 +197,11 @@ img.mobileImg {
     font-weight: 300;
 }
 
+.gallery #smallImg{
+    width: 250px;
+    height: 250px;
+    object-fit: cover; 
+}
 
 /****** location
 ******************/
@@ -337,6 +344,13 @@ footer {
         width: 80%;
         padding:20px;
     }
+    
+    .gallery #smallImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+}
+    
     
     .location .hotel{
         width: 100%;
