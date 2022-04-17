@@ -242,7 +242,7 @@ img.mobileImg {
 
 .location {
     margin-top: 2vh;
-    margin-bottom: 18vh;
+    margin-bottom: 5vh;
 }
 
 .location h3 {
@@ -323,6 +323,7 @@ img.mobileImg {
 
 /********팬다 요청 예물샷************/
 .timeAndMore{
+    position: relative;
     width: 100%;
     height: 45vh;
     background-color: #3E3D3D;
@@ -659,7 +660,6 @@ mobile interface
     
     .location {
         margin-top: 2vh;
-        margin-bottom: 3vh;
     }
     .location .address {
         width: 100%;
