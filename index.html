@@ -26,9 +26,9 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
     
-<div class="container">
-    <!----Menu----->
-    <div class="navbar"> 
+
+<!----Menu----->
+<div class="navbar"> 
         <nav>
             <ul id="menuList">
                 <div class="menuBlock">
@@ -40,9 +40,9 @@
         </nav>
         <!---
             <i class="fa fa-bars" aria-hidden="true" onclick="toggleMenu()"></i> -->
-    </div>
+ </div>
     
-    
+<div class="container">
     <!----First Page---->
     <div class="row">
         <!--
@@ -137,7 +137,7 @@
         <!---fourth row--->   
         <a data-fancybox="gallery" href="image/image10.JPG"><img src="image/image10.JPG" id="smallImg"></a> 
         
-        <a data-fancybox="gallery" href="image/image16.JPG"><img src="image/image16.jpg" id="smallImg"></a>
+        <a data-fancybox="gallery" href="image/image16.JPG"><img src="image/image16.JPG" id="smallImg"></a>
             
         <a data-fancybox="gallery" href="image/image11.JPG"><img src="image/image11.JPG" id="smallImg"></a> 
          <!---fifth row--->    
@@ -209,22 +209,51 @@
             </section>
         </div>    
     </section>
+
+    </center>
+</div>
+
+<section class="timeAndMore">
+    <div class="leftText">
+        <h1>Ceremony 5 pm to 6 pm </h1>
+            <h4>
+            <i>At</i> Plumeria Grove</h4>
         
+        <h1>Reception 6: 30 pm </h1>
+            <h4>
+            <i>At</i> Kahala o Ke Kai room</h4>
+        <p>Please let us know if you have speical dietary needs</p>
+    </div>
+    <div class="rigntImage">
+        <img src="image/ring.jpg">
+    </div>
+
+</section>  
+    
+<div class="cotainer">
+<center>
  <section class="contact">
+    
      <!---Pop up message--->
-     
      <div id="grayout"></div>
      <div ID="newPopUp"> 
          <h3 color="grey" style="font-size: 20px;">혼주 계좌 번호</h3>
          <hr width="95%" size="1" color="lightgrey"><br>
-         신한은행 (예금주: 강신경)<br>
-         <span>1230452394958</span>
+         <span style="width: 70%;">신한은행 (예금주: 강신경)<br>
+         <font ID="copyText" value="1234567">1230452394958</font></span>
+         <span style="width: 28%; text-align: center;">
+            <button onclick="copyToClipboard();">복사하기</button></span>
+         
         <br><br><br>
         <h3 color="grey" style="font-size: 20px;">신부 계좌 번호</h3>
          <hr width="95%" size="1" color="lightgrey"><br>
-         농협 (예금주: 강효정)<br>
-         <span>1230452394958</span>
-         <br><br><br>
+         <span style="width: 70%;">농협 (예금주: 강효정)<br>
+         1230452394958</span>
+         
+         <span style="width: 28%; text-align: center;">
+            <button onclick="copyToClipboard();">복사하기</button></span>
+         
+         <br><br><br><br>
          <div class="closeButton" 
               onclick="Close();">닫기</div>
      </div>
@@ -232,17 +261,19 @@
      <br><br><br><br>
     <h3>CONTACT</h3><br>
     <div class="contactInfo">
-        <font style="font-family: Noto Serif KR; font-size:20px;"> 신랑에게 </font> <br>
+        <span style="font-family: Noto Serif KR; font-size:20px;"> 신랑에게 </span> <br>
         <div class="menu"><a href=""><span class="iconify" data-icon="bxs:phone"></span> 연락하기</a></div>
         
         <button type="button"><span class="iconify" data-icon="mdi:face-man"></span> 계좌번호 보기</button>
         </div>
     
     <div class="contactInfo">
-        <font style="font-family: Noto Serif KR; font-size:20px;"> 신부에게 </font> <br>
+        <span style="font-family: Noto Serif KR; font-size:20px;"> 신부에게 </span> <br>
         <div class="menu"><a href=""><span class="iconify" data-icon="bxs:phone"></span> 연락하기</a></div>
-       <button type="button" onclick="PopUp();"><span class="iconify" data-icon="mdi:face-woman"></span> 계좌번호 보기</button>
+        
+        <button type="button" onclick="PopUp();"><span class="iconify" data-icon="mdi:face-woman"></span> 계좌번호 보기</button>
         </div> 
+
      
 </section>
 

@@ -103,9 +103,8 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-
 function PopUp(){ 
-    
+   // document.write("Hello World!");
     var popUpM = document.getElementById("newPopUp");
     popUpM.style.display = "block";
     
@@ -121,4 +120,12 @@ function Close(){
     grayOut.style.display = "none";
 }
 
+
+function copyToClipboard() {
+ var copyText ="1234567";
+   /* Copy the text NEED TO FIX*/
+  navigator.clipboard.writeText(copyText.value);
+  /* Alert the copied text */
+  alert("1234567 Copied");
+}
 
