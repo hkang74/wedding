@@ -139,7 +139,7 @@ img.mobileImg {
 /***** text intro
 ******************/
 .row-2 {
-    padding-top: 15vh;
+    padding-top: 20vh;
     padding-bottom: 5vh;
     text-align: center;
     height: 8vh;
@@ -283,20 +283,24 @@ img.mobileImg {
 }
 
 .location .direction a{
-    padding: 12px;
+    padding: 18px;
     margin-right: 2%;
     border: solid lightgrey 1px;
-    border-radius: 25px;
+    border-radius: 30px;
     background-color: white;
     color: grey;
     font-family: Roboto;
     width: 45%;
     text-decoration: none;
+    font-size: 14px;
 }
+
 
 .location .directionText{
     text-align: left; 
-    margin-top: 8vh;
+    margin-top: 14vh;
+    width: 60%;
+    height: 60vh;
 }
 
 .location .directionText h4{
@@ -311,9 +315,19 @@ img.mobileImg {
 .location .directionText li{
     list-style: none;
     font-family: Noto Sans KR;
-    font-size: 15px;
-    
+    font-size: 14px;
+    color: grey;  
 }
+
+
+/*****CONTACT*****/
+.contact h3 {
+    font-family: Libre Baskerville;
+    letter-spacing: .1rem;
+    color: #BBBBBB;
+    font-weight: 300;
+}
+
 
 /****** footer
 ******************/
@@ -420,7 +434,7 @@ mobile interface
     
     
     .row-2 {
-        padding-top: 10vh;
+        padding-top: 15vh;
         padding-bottom: 3vh;
     }
     
@@ -450,6 +464,10 @@ mobile interface
     .location .address {
         width: 100%;
         padding-left: 0px;
+    }
+    
+    .location .directionText{
+        width: 100%;
     }
     
 
