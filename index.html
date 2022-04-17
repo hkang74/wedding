@@ -109,7 +109,7 @@
     </center>
     
     <center>
-    <section id="galleryPage" class="gal">   
+    <section id="galleryPage" class="gal"> <br>  
     <h3> GALLERY </h3><br>
         <div class="galleryView">
         <!---first row--->    
@@ -150,7 +150,7 @@
     </section> 
 
 <!-----Location---->        
- <section id="location" class="location">   
+ <section id="location" class="location"> <br>  
      <h3> VENUE</h3><br>
      
      <div class="slideshow-container">
@@ -205,25 +205,52 @@
             <li><b>우버, 리프트 이용시:</b> 20-30분 소요</li>
             <li><b>호텔 택시 이용시:</b> 예약 <span class="iconify" data-icon="fluent:call-48-filled"> </span><font color="#1A73E8">+1 (808) 369-9480 </font></li> 
         <h4> Parking information </h4>
-            <font style="font-family:  Roboto; color: grey; font-size:14.5px;"><b>Valet or self-parking:</b> 4 hours complimentary with validation. After 4 hours - $6.00 for every 20 minutes. Note: Lost Tickets - $60.00 </font><br><br><br>
+            <font style="font-family:  Roboto; color: grey; font-size:14.5px;"><b>Valet or self-parking:</b> 4 hours complimentary with validation. After 4 hours - $6.00 for every 20 minutes. Note: Lost Tickets - $60.00 </font>
             </section>
         </div>    
     </section>
         
  <section class="contact">
-    <h3>CONTACT</h3>
+     <!---Pop up message--->
+     
+     <div id="grayout"></div>
+     <div ID="newPopUp"> 
+         <h3 color="grey" style="font-size: 20px;">혼주 계좌 번호</h3>
+         <hr width="95%" size="1" color="lightgrey"><br>
+         신한은행 (예금주: 강신경)<br>
+         <span>1230452394958</span>
+        <br><br><br>
+        <h3 color="grey" style="font-size: 20px;">신부 계좌 번호</h3>
+         <hr width="95%" size="1" color="lightgrey"><br>
+         농협 (예금주: 강효정)<br>
+         <span>1230452394958</span>
+         <br><br><br>
+         <div class="closeButton" 
+              onclick="Close();">닫기</div>
+     </div>
+     
+     <br><br><br><br>
+    <h3>CONTACT</h3><br>
     <div class="contactInfo">
-        Groom <a href="">신랑에게 연락하기</a> <a href="">신랑측 계좌번호</a>
-    </div>
-     <div class="contactInfo">
-         Bride <span>신부에게 연락하기</span> <span>신부측 계좌번호</span>
-    </div>   
- 
+        <font style="font-family: Noto Serif KR; font-size:20px;"> 신랑에게 </font> <br>
+        <div class="menu"><a href=""><span class="iconify" data-icon="bxs:phone"></span> 연락하기</a></div>
+        
+        <button type="button"><span class="iconify" data-icon="mdi:face-man"></span> 계좌번호 보기</button>
+        </div>
+    
+    <div class="contactInfo">
+        <font style="font-family: Noto Serif KR; font-size:20px;"> 신부에게 </font> <br>
+        <div class="menu"><a href=""><span class="iconify" data-icon="bxs:phone"></span> 연락하기</a></div>
+       <button type="button" onclick="PopUp();"><span class="iconify" data-icon="mdi:face-woman"></span> 계좌번호 보기</button>
+        </div> 
+     
+</section>
 
      
-    <a href="#" onclick="window.open('popup.html','popup','toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=300,height=300')">팝업test</a>
-     
- </section>
+    <!---
+     <a href="#" onclick="window.open('popup.html','popup','toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=300,height=300')">팝업test</a>
+     <button onclick="myFunction()">Try it</button>-->
+
         
      <br><br> <br><br><br>   
 </center>

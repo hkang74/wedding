@@ -76,3 +76,49 @@ function showSlides(n) {
 
 
 /***open new window***/
+function myFunction() {
+  let text = "Press a button!\nEither OK or Cancel.";
+  if (confirm(text) == true) {
+    text = "You pressed OK!";
+  } else {
+    text = "You canceled!";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+
+
+/***Collapse Menu****/
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activeM");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+function PopUp(){ 
+    
+    var popUpM = document.getElementById("newPopUp");
+    popUpM.style.display = "block";
+    
+    var grayOut = document.getElementById("grayout");
+    grayOut.style.display = "block";    
+}
+
+function Close(){
+    var popUpM = document.getElementById("newPopUp");
+    popUpM.style.display = "none"; 
+    
+    var grayOut = document.getElementById("grayout");
+    grayOut.style.display = "none";
+}
+
+

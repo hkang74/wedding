@@ -242,7 +242,7 @@ img.mobileImg {
 
 .location {
     margin-top: 2vh;
-    margin-bottom: 15vh;
+    margin-bottom: 8vh;
 }
 
 .location h3 {
@@ -321,6 +321,13 @@ img.mobileImg {
 
 
 /*****CONTACT*****/
+.contact{
+    position: relative;
+    width:60%;
+    height:570px;
+    margin: auto; 
+}
+
 .contact h3 {
     font-family: Libre Baskerville;
     letter-spacing: .1rem;
@@ -328,6 +335,102 @@ img.mobileImg {
     font-weight: 300;
 }
 
+.contact .contactInfo{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    padding:10px;
+    margin-top: 25px;
+}
+
+.contact .contactInfo .menu{
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #ffe812; /*카카오색*/
+    border-radius: 10px;
+    font-family: Noto Sans KR;
+}
+
+.contact .contactInfo a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.contact button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border:0px;
+    background-color: E2E2E2;
+}
+
+.contact button:hover{
+    background-color: lightgrey;
+}
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.activeM, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/****계좌번호 팝업 메세지****/
+#newPopUp{
+    display: none;
+    width: 80%;
+    text-align: left;
+    background-color: white;
+    position: absolute;
+    padding: 10%;
+    padding-top: 50px;
+    top:0px;
+    z-index: 3;
+    font-family: Noto Sans KR;
+    border: solid lightgrey;
+}
+
+#newPopUp .closeButton{
+    background-color: cornflowerblue;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    width: 90%;
+}
+
+
+#grayout {
+   position: fixed;
+   left: 0px;
+   top: 0px;
+   height: 100%;
+   width: 100%;
+   background-color: black;
+   opacity: 0.5;
+   z-index: 2;
+   display: none;
+}
 
 /****** footer
 ******************/
@@ -470,6 +573,16 @@ mobile interface
         width: 100%;
     }
     
+
+    /*****CONTACT*****/
+    .contact{
+        width:100%;
+    }
+
+    .contact .contactInfo{
+        position: relative;
+        width: 70%;
+    }
 
 }
 
