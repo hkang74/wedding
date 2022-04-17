@@ -166,15 +166,6 @@ img.mobileImg {
     height:100px
 }
 
-.fade { /* fading effect takes 3s */
-   animation: fadeEffect 3s; 
-}
-    
-@keyframes fadeEffect { /* from 0 to full opacity */
-     from {opacity: 0;}
-      to {opacity: 1;}
-}
-
 .row-3 {
     padding: 50px;
     width: 400px;
@@ -334,43 +325,31 @@ img.mobileImg {
 
 .timeAndMore div {
     display: inline-block;
-    float:left;
+    float:right;
     height: 45vh;
 }
 
 .timeAndMore .leftText{
     width: 60%;
-    padding-left: 20%;
+    text-align: right;
     padding-top: 5vh;
     padding-bottom: 5vh;
     box-sizing: border-box;
     color: white;
-    font-family: Libre Baskerville;      
+    max-width: 500px;
 }
 
-.timeAndMore .leftText h1{
-    letter-spacing: .1rem;
-    margin-top: 2vh;
-    font-size: clamp(16px, 2.5vw, 20px);
-    font-weight: lighter;
-}
-
-.timeAndMore .leftText h4{
-  color: lightgrey;
-  font-family: Roboto;
-  font-weight: 300;
-   margin-top: 10px;
+.timeAndMore .leftText img{
+    width: 90%;
+    max-width: 300px;
+    float: left;
 }
 
 .timeAndMore .leftText p{
     font-family: Roboto;
     font-weight: 200;
     margin-top: 10vh;
-}
-
-.timeAndMore .leftText i{
-    font-size: 15px;
-    color: #A47D7D;
+    float: left;
 }
 
 .timeAndMore .rigntImage{
@@ -674,13 +653,24 @@ mobile interface
     }
     
     
+    .location .directionText h4{
+        color: #A47D7D;
+        font-size: clamp(14px, 5vw, 18px);
+    }
+
+    .location .directionText li{
+        font-size: clamp(14px, 3.5vw, 16px);
+    }
+    
+    
+    
 /********팬다 요청 예물샷************/
     .timeAndMore{
         width: 100%;
         height: 22vh;
     }
 
-  .timeAndMore div{
+    .timeAndMore div{
         display: inline-block;
         float:left;
         height: 22vh;
@@ -688,15 +678,22 @@ mobile interface
 
     .timeAndMore .leftText{
         width: 62%;
-        padding-left: 6%;
+        padding-left: 5%;
         padding-top: 3vh;
         padding-bottom: 3vh;
-        box-sizing: border-box;   
+        box-sizing: border-box; 
+        overflow: hidden;
+    }
+    
+    
+   .timeAndMore .leftText img{
+        width: 95%;   
     }
 
     .timeAndMore .leftText p{
         font-size: 3vw;
-        margin-top: 1vh;
+        margin-top: 1.5vh;
+        text-align: left;
     }
 
     .timeAndMore .rigntImage{

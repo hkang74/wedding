@@ -33,19 +33,6 @@ window.addEventListener("scroll", reveal);
 
 
 
-
-/*following sript doesn't work smoothly in kakao*/
-window.addEventListener("scroll", function() {showFunction()});
-
-function showFunction() 
-{
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-        document.getElementById("fade").style.display = "block";
-    } else {
-        document.getElementById("fade").style.display = "none";
-    }
-}
-
 /****slide show script****/
 let slideIndex = 1;
 showSlides(slideIndex);
