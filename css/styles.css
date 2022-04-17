@@ -38,6 +38,7 @@ font-family: 'Gowun Batang', serif;
     padding-bottom: 10px;
     opacity: 0.8;
     position: fixed;
+    z-index: 2;
 }
 
 .navbar i { /*hide the hamburger menu icon*/
@@ -120,6 +121,21 @@ img.mobileImg {
     display: none;
 }
 
+/******date******/
+.date{
+    background-color: #A88E8E;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 70%;
+    font-family: Playfair Display;
+    font-weight: 100;
+    color: white;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /***** text intro
 ******************/
 .row-2 {
@@ -138,7 +154,7 @@ img.mobileImg {
 
 .reveal{
     position: relative;
-    transform: translateY(70x);
+    transform: translateY(150x);
     opacity: 0;
     transition: 2s all ease;
     padding: 0px;
@@ -161,9 +177,10 @@ img.mobileImg {
 
 .row-3 {
     padding: 50px;
-    width: 500px;
+    width: 400px;
     margin-top: 15x;
-    margin-bottom: 20vh;
+    margin-bottom: 17vh;
+    text-align: center;
 }
 
 .row-3 p {
@@ -173,33 +190,33 @@ img.mobileImg {
 }
 
 .row-3 .parent{ /**장남장녀, 혼주*/
-    margin-top: 12vh;
+    margin-top: 10vh;
     font-family: Gowun Batang;
     font-weight: 200;
     letter-spacing: .1rem;
-    font-size: 17px;
-    color: #9B9B9B;
+    font-size: 17px;  
+    height: 60px;
+    display: block;
+}
+
+.row-3 .friends{ /**친구들용*/
+    margin-top: 12vh;
+    letter-spacing: .1rem;
+    height: 60px;
+    display: none;
+}
+
+.row-3 .friends span{
+    padding: 20px;
 }
 
 
-/******date******/
-.date{
-    background-color: #A88E8E;
-    padding: 50px;
-    text-align: center;
-    margin-bottom: 23vh;
-   font-family: Playfair Display;
-    font-weight: 100;
-    color: white;
-    font-size: 16px;
-}
 
 
 /****** gallery
 ******************/
-
 .gal {
-    margin-bottom: 25vh;
+    margin-bottom: 22vh;
 }
 
 .gal h3 {
@@ -210,12 +227,12 @@ img.mobileImg {
 }
 
 .gal .galleryView{
-    width: 770px;
+    width: 700px;
 }
 
 .gal #smallImg{
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     object-fit: cover; 
 }
 
@@ -224,8 +241,8 @@ img.mobileImg {
 ******************/
 
 .location {
-    margin-top: 20vh;
-    margin-bottom: 28vh;
+    margin-top: 2vh;
+    margin-bottom: 15vh;
 }
 
 .location h3 {
@@ -240,17 +257,18 @@ img.mobileImg {
     margin-top: 20px;
 }
     
-.location .text {
+.location .address {
     text-align: left;
     width: 60%;
-    margin-top: 20px;
+    padding-top: 20px;
     padding-left: 3%;
+    margin: auto;
     font-family: Roboto;
     color:#222222;
-    font-size: 17px
+    font-size: 17px;
 }
     
-.location .text li {
+.location .address li {
     list-style-type: none;
     padding-top:9px;
 }
@@ -264,7 +282,38 @@ img.mobileImg {
     color: #1A73E8; 
 }
 
+.location .direction a{
+    padding: 12px;
+    margin-right: 2%;
+    border: solid lightgrey 1px;
+    border-radius: 25px;
+    background-color: white;
+    color: grey;
+    font-family: Roboto;
+    width: 45%;
+    text-decoration: none;
+}
 
+.location .directionText{
+    text-align: left; 
+    margin-top: 8vh;
+}
+
+.location .directionText h4{
+    color: #A47D7D;
+    font-size: 18px;
+    font-family: Gowun Batang;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+
+.location .directionText li{
+    list-style: none;
+    font-family: Noto Sans KR;
+    font-size: 15px;
+    
+}
 
 /****** footer
 ******************/
@@ -284,7 +333,12 @@ footer {
 
 
 
-/*mobile interface*/
+/*****************
+******************
+mobile interface
+*****************
+*****************/
+
 @media only screen and (max-width: 700px){
     
     /*menu for mobile*/
@@ -353,34 +407,49 @@ footer {
         display: none;
     }
     
+    /******date******/
+    .date{
+        background-color: #BEAAAA;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        font-family: Libre Baskerville;
+        font-size: 12px;
+        font-weight: lighter;
+        width: 100%;
+    }
+    
+    
     .row-2 {
+        padding-top: 10vh;
         padding-bottom: 3vh;
     }
     
     .row-3{
-        width: 80%;
-        padding:20px;
+        width: 320px;
+        padding:10px;
     }
     
+    .row-3 p {
+    font-size: 4vw;
+    }
     
+    /***gallery*/
     .gal .galleryView{
-    width: 100%;
+        width: 100%;
+    /*height: 410px;
+       /**things to do: view more button*/
     }
     .gal #smallImg{
-    width: 100px;
-    height: 100px;
-    object-fit: cover; 
+        width: 100px;
+        height: 100px;
+        object-fit: cover; 
     }
     
     
-    .location .hotel{
+    /*location*/
+    .location .address {
         width: 100%;
-    }
-    
-    .location .text {
-        text-align: left;
-        width: 100%;
-        font-size: 16px;
+        padding-left: 0px;
     }
     
 

@@ -12,6 +12,8 @@
      <link rel="stylesheet" href="css/styles.css">
 <!----fancybox style sheet----->
      <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<!----fancybox style sheet----->
+     <link rel="stylesheet" href="css/slideShow.css">
 <!----font awesome icons----->
      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <!----iconify----->
@@ -32,7 +34,7 @@
                 <div class="menuBlock">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#galleryPage">GALLERY</a></li>
-                <li><a href="#direction">LOCATION</a></li>
+                <li><a href="#location">VENUE</a></li>
                 </div>    
             </ul>
         </nav>
@@ -44,111 +46,188 @@
     <!----First Page---->
     <div class="row">
         <!--
-        <h1> SAVE<font face="Juliette"> The </font> DATE</h1>
-        <h5>for the wedding of </h5>-->
+        <h1> SAVE<font face="Juliette"> The </font> DATE</h1>-->
         <img src="image/SaveTheDate.png" class="titleText">
         
         <h4>HOSEOK BRYAN OK</h4>
         <h4><font face="Whisper" color="945D5D">&amp;</font> HYOJEONG KANG</h4>
-        <br>
-        <h5>June 24, 2022</h5> 
- 
-
+       <!-- <h5>June 24, 2022</h5> -->
         
     </div>
-
+    <!----main image ---->
     <div class="row-1">  
         <img src="image/mainDestktop.jpg" class="desktopImg">
         <img src="image/mainImg.jpeg" class="mobileImg">   
     </div>
-
+    <section class="date">
+        <font style="font-size: clamp(16px, 2.5vw, 20px); letter-spacing: .2rem;">June 24. 2022 </font><br><br>
+        Saturday 5:00 PM<br>
+        <font face="Roboto"> Honolulu, Hawaii </font><br>
+    </section>  
     
+    <!----tex 인사말----->
     <div class="row-2">
-        <section class="container reveal">
+        <section class="reveal">
             <span class="iconify" data-icon="bxs:quote-alt-left" style="color: grey"></span>
             <span class="text">서로의 분위기 속에서 같이 있읍시다. <br> 난 항상 당신과, 당신은 항상 나와.</span> 
-            <span class="iconify" data-icon="bxs:quote-alt-right" style="color: grey"></span>
-        
+            <span class="iconify" data-icon="bxs:quote-alt-right" style="color: grey"></span>       
         </section>
     </div>
-    
-
     <center>
     <div class="row-3">
-         <div class="fade" id="fade">
             <p>2012년 봄이 시작될 무렵 <br>
             저희 두 사람의 인연이 시작됐습니다. <br><br>
-            10년의 세월을 연인이자 친구로, 동반자이자 때로는 멘토로, 한국과 미국에서 서로의 곁을 지켜왔던 저희 두 사람이 2022년 여름의 끝자락에서 앞으로 함께할 평생을 약속하고자 합니다.<br> <br>
-            선물과 같은 하루, 함께 축복해주시면 더 없는 기쁨으로 간직하겠습니다. </p>
-          </div> 
+                
+            그 후로 열 번의 봄을 맞이하는 동안 <br>
+            연인이자 친구로, 멘토이자 동반자로, 함께 <br>
+            성장하는 모든 순간을 한국과 미국에서 <br>
+            서로의 곁을 지켜주었습니다. <br><br>
+                
+            마침내 같이 맞이하는 열번째 봄을 보내며,<br> 
+            2022년 여름의 시작에서 앞으로 함께할 <br>
+            평생을 약속하고자 합니다.<br><br>
+                
+            선물과 같은 하루, 함께 축복해주시면 <br> 
+            더 없는 기쁨으로 간직하겠습니다. </p>
+          
           <div class="parent">
-              <font size="3px">옥  환 · 윤니콜의 장남 </font><font size="4px">옥호석 </font><br>
-              <font size="3px">강신경 · 문정혜의 장녀 </font><font size="4px"> 강효정</font>
+            <section class="reveal">
+              <font size="3px" color="grey">옥  환 · 윤은경의 장남 </font><font style="font-size:17px; color:#945D5D; font-weight: 700;">옥호석 </font><br>
+              <font size="3px" color="grey">강신경 · 문정혜의 장녀 </font><font style="font-size:17px;  color:#945D5D; font-weight: 700" > 강효정</font>
+              </section> 
+          </div>
+        
+           <div class="friends">
+             <div class="fade" id="fade">
+              
+              <span><font style="color:#CAB7B7;">Groom </font><font style="font-size:17px; font-weight: 200; font-family: Gowun Batang; color: grey;">옥호석 </font></span>
+                 
+              <span><font style="color:#CAB7B7;" >Bride     </font><font style="font-size:17px; font-weight: 200; font-family: Gowun Batang; color: grey;" > 강효정</font></span>
+              </div> 
           </div>
      </div>
     </center>
-</div>  
-
-<section class="date">
-    <font face="Libre Baskerville" font size="5">2022. 06. 24 Sat </font><br><br>
-    Ceremony: 5:00 PM <font face="Roboto"> Plumeria Grove </font><br>
-    Reception: 6:30 PM <font face="Roboto">O Ke Kai Room</font><br><br>
-    <font face="Libre Baskerville"> Kahala Hotel &amp; Resort </font><br>
-    <font face="Helvetica">
-        Honolulu, Hawaii</font>
-</section>  
-  
-<div class="container">
+    
     <center>
     <section id="galleryPage" class="gal">   
-    <h3> GALLERY </h3><br><br>
+    <h3> GALLERY </h3><br>
         <div class="galleryView">
+        <!---first row--->    
         <a data-fancybox="gallery" href="image/image2.JPG"><img src="image/image2.JPG" id="smallImg"></a>
-        <a data-fancybox="gallery" href="image/image1.JPG"><img src="image/image1.JPG" id="smallImg"></a>
-        <a data-fancybox="gallery" href="image/image3%20(1).jpg"><img src="image/image3%20(1).jpg" id="smallImg"></a>
+            
         <a data-fancybox="gallery" href="image/image4.JPG"><img src="image/image4.JPG" id="smallImg"></a>
-        <a data-fancybox="gallery" href="image/image5.JPG"><img src="image/image5.JPG" id="smallImg"></a>
-        <a data-fancybox="gallery" href="image/image6.jpg"><img src="image/image6.jpg" id="smallImg"></a>
-        <a data-fancybox="gallery" href="image/image7.JPG"><img src="image/image7.JPG" id="smallImg"></a> 
-         <a data-fancybox="gallery" href="image/image8.JPG"><img src="image/image8.JPG" id="smallImg"></a> 
-        <a data-fancybox="gallery" href="image/image9.JPG"><img src="image/image9.JPG" id="smallImg"></a> 
+          
+            
+        <a data-fancybox="gallery" href="image/image1.JPG"><img src="image/image1.JPG" id="smallImg"></a>
+            
+      
+         <!---second row--->      
+        <a data-fancybox="gallery" href="image/image22.JPG"><img src="image/image22.JPG" id="smallImg"></a>
+        
+        <a data-fancybox="gallery" href="image/image6.jpg"><img src="image/image6.jpg" id="smallImg"></a> 
+       
+            
+        <a data-fancybox="gallery" href="image/image17.JPG"><img src="image/image17.JPG" id="smallImg"></a>
+         <!---third row--->  
+         <a data-fancybox="gallery" href="image/image18.JPG"><img src="image/image18.JPG" id="smallImg"></a>
+             
+         <a data-fancybox="gallery" href="image/image19.JPG"><img src="image/image19.JPG" id="smallImg"></a> 
+            
+        <a data-fancybox="gallery" href="image/image20.JPG"><img src="image/image20.JPG" id="smallImg"></a> 
+        <!---fourth row--->   
         <a data-fancybox="gallery" href="image/image10.JPG"><img src="image/image10.JPG" id="smallImg"></a> 
+        
+        <a data-fancybox="gallery" href="image/image16.JPG"><img src="image/image16.jpg" id="smallImg"></a>
+            
         <a data-fancybox="gallery" href="image/image11.JPG"><img src="image/image11.JPG" id="smallImg"></a> 
-        <a data-fancybox="gallery" href="image/image12.JPG"><img src="image/image12.JPG" id="smallImg"></a> 
-        <a data-fancybox="gallery" href="image/image13.JPG"><img src="image/image13.JPG" id="smallImg"></a> 
-        <a data-fancybox="gallery" href="image/image14.JPG"><img src="image/image14.JPG" id="smallImg"></a> 
-        <a data-fancybox="gallery" href="image/image15.JPG"><img src="image/image15.JPG" id="smallImg"></a> 
+         <!---fifth row--->    
+        <a data-fancybox="gallery" href="image/image21.JPG"><img src="image/image21.JPG" id="smallImg"></a>
+            
+        <a data-fancybox="gallery" href="image/image24.JPG"><img src="image/image24.JPG" id="smallImg"></a> 
+            
+        <a data-fancybox="gallery" href="image/image25.JPG"><img src="image/image25.JPG" id="smallImg"></a> 
         </div>
     </section> 
 
-        
+<!-----Location---->        
  <section id="location" class="location">   
-        <h3> LOCATION </h3>
-        <img src="image/kahalaHotel.jpg" class="hotel">
-        <div class="text">
-            <font size="4px" color="7990AD"><b>The Kahala Hotel &amp; Resort </b></font><br>
-       
+     <h3> VENUE</h3><br>
+     
+     <div class="slideshow-container">
+         <div class="mySlides fade">     
+             <img src="image/kahala_beach.jpg" style="width:100%">
+             <div class="text"></div>
+         </div>
+
+         <div class="mySlides fade"> 
+            <img src="image/kahala_ceremony.jpg" style="width:100%">
+            <div class="text">Ceremony</div>
+         </div>
+
+         <div class="mySlides fade">
+             <img src="image/kahala_reception.jpg" style="width:100%">
+             <div class="text">Reception</div>
+         </div>
+
+         <a class="prev" onclick="plusSlides(-1)">❮</a>
+         <a class="next" onclick="plusSlides(1)">❯</a>
+     </div>
+     <br>
+
+     <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+     </div>
+     
+    <div class="address"><br>
+            <font size="4px" color="grey"><b>The Kahala Hotel &amp; Resort </b></font><br>
             <li><span class="iconify" data-icon="majesticons:map-marker"> </span> 5000 Kahala Ave, Honolulu, HI 96816</li>
             <li><span class="iconify" data-icon="fluent:call-48-filled"></span>  (808) 369-9471 </li>  
-        </div>
+    </div>
         <div class="direction">
-            <br><br>
-            Google Dir to be added
-        </div>  
+        <br><br>  
+        <a href="#"><span class="iconify" data-icon="logos:google-maps"></span> View Google Map</a>
+            
+        <a href="#"><span class="iconify" data-icon="eva:external-link-fill"></span> Visit Website </a>
+        </div><br>
+     
+        <div class ="directionText">      
+        <h4> 호누룰루 (HNL) 공항에서 (20 miles) </h4>
+            <li><b>우버, 리프트 이용시:</b> 30-40분 소요</li>
+            <li><b>공항 셔틀 이용시: </b> 50분 - 1시간 소요 (편도 $45)</li>
+            <li><b>호텔 택시 이용시: </b> 예약 <span class="iconify" data-icon="fluent:call-48-filled"> </span> <font color="#1A73E8">+1 (808) 369-9480 </font> </li>
+        <h4> 와이키키에서 (5 miles) </h4>
+            <li><b>우버, 리프트 이용시:</b> 20-30분 소요</li>
+            <li><b>호텔 택시 이용시:</b> 예약 <span class="iconify" data-icon="fluent:call-48-filled"> </span><font color="#1A73E8">+1 (808) 369-9480 </font></li> 
+        <h4> Parking information </h4>
+            <font style="font-family:  Roboto;"><b>Valet or self-parking:</b> 4 hours complimentary with validation. After 4 hours - $6.00 for every 20 minutes. Note: Lost Tickets - $60.00 </font><br><br><br>
+        </div>    
     </section>
-    
- <br><br><br> To be added: contact <br><br> <br><br><br>   
+        
+ <section id="CONTACT">
+     <h1>CONTACT</h1>
+    <div class="contactInfo">
+        Groom <a href="">신랑에게 연락하기</a> <a href="">신랑측 계좌번호</a>
+    </div>
+     <div class="contactInfo">
+         Bride <span>신부에게 연락하기</span> <span>신부측 계좌번호</span>
+    </div>   
+ 
+ </section>
+        
+      To be added: contact <br><br> <br><br><br>   
 </center>
 </div>
-    <!---end of the container--->
+<!---end of the container--->
     
 <!----js scripts----->
     <script type="text/javascript" src="js/script.js"> </script>
 </body>
     
 <footer>
-Hyo Kang 2022<br><br>
-hkang2@ufl.edu
+Created by Hyo Kang<br>
+@ All Rights Reserved
 </footer>
 
 </html>
