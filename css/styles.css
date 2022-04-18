@@ -21,8 +21,8 @@ font-family: 'Gowun Batang', serif;
 .container {
     width: 100%;
     min-height: 100vh;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 8%;
+    padding-right: 8%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -281,7 +281,6 @@ img.mobileImg {
     background-color: white;
     color: grey;
     font-family: Roboto;
-    width: 45%;
     text-decoration: none;
     font-size: 14px;
 }
@@ -313,7 +312,7 @@ img.mobileImg {
 
 
 
-/********팬다 요청 예물샷************/
+/********ceremonyTime 예물샷************/
 .timeAndMore{
     width: 100%;
     height: 45vh;
@@ -332,23 +331,16 @@ img.mobileImg {
 .timeAndMore .leftText{
     width: 60%;
     text-align: right;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
     box-sizing: border-box;
     color: white;
     max-width: 500px;
 }
 
 .timeAndMore .leftText img{
-    width: 90%;
-    max-width: 300px;
-    float: left;
-}
-
-.timeAndMore .leftText p{
-    font-family: Roboto;
-    font-weight: 200;
-    margin-top: 10vh;
+    width: 100%;
+    max-width: 380px;
     float: left;
 }
 
@@ -401,13 +393,10 @@ img.mobileImg {
     background-color: #ffe812; /*카카오색*/
     border-radius: 10px;
     font-family: Noto Sans KR;
+    color: black;
+    font-size: 14px;
 }
 
-.contact .contactInfo a{
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-}
 
 .contact button{
     padding: 12px;
@@ -416,7 +405,7 @@ img.mobileImg {
     border:0px;
     background-color: E2E2E2;
     color: black;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .contact button:hover{
@@ -455,42 +444,67 @@ img.mobileImg {
     max-width: 500px;
     text-align: left;
     background-color: white;
-    padding: 6%;
+    padding:8%;
     top:0px;
     left:12%;
     z-index: 3;
     font-family: Noto Sans KR;
-    border: solid lightgrey;
+    border: solid lightgrey 1px;;
     border-radius: 5px;
-    box-sizing: border-box; 
-    
+    box-sizing: border-box;   
+}
+#newPopUp .title{
+    font-size: 19px;
+    color: lightslategrey;
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
 
+.title span{
+    display: inline-grid;
+}
+
+#newPopUp .title .iconify{
+    background-color: cornflowerblue;
+    padding:13px;
+    border-radius: 50%;
+    color: white;
+    float:left;
+}
+
+#newPopUp .bank{
+    padding: 10px;
+    border:solid lightgrey 1px;
+    margin-top: 10px;
+    border-radius: 10px
+}
 #newPopUp span{
+    top: 10px;
     display: inline-block;
-    float: left;
+    /*display: inline-block;
+    float: left;*/
 }
 
-#newPopUp span .copy{
-    width: 30%;
-    background: grey;
-    
+#newPopUp .name{
+    width: 35%;
+    font-size: 14px;
+    color: grey;
 }
 
-#newPopup span button{
-    padding:6px; 
-    border-radius: 10px; 
-    background-color: #CCCCCC; 
-    font-size: 14px; 
+#newPopUp .account{
+    width: 60%;
+    font-size: 14px;
+    color: dimgrey;
 }
-
 
 #newPopUp .closeButton{
-    background-color: cornflowerblue;
+    background-color:cornflowerblue;
     padding: 15px;
     text-align: center;
     color: white;
     width: 90%;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
 
@@ -679,8 +693,8 @@ mobile interface
     .timeAndMore .leftText{
         width: 62%;
         padding-left: 5%;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
         box-sizing: border-box; 
         overflow: hidden;
     }
@@ -688,12 +702,6 @@ mobile interface
     
    .timeAndMore .leftText img{
         width: 95%;   
-    }
-
-    .timeAndMore .leftText p{
-        font-size: 3vw;
-        margin-top: 1.5vh;
-        text-align: left;
     }
 
     .timeAndMore .rigntImage{
