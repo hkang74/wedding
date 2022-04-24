@@ -131,7 +131,6 @@ img.mobileImg {
     font-family: Playfair Display;
     font-weight: 100;
     color: white;
-    font-size: 18px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -170,7 +169,7 @@ img.mobileImg {
     padding: 50px;
     width: 400px;
     margin-top: 15x;
-    margin-bottom: 17vh;
+    margin-bottom: 15vh;
     text-align: center;
 }
 
@@ -180,26 +179,6 @@ img.mobileImg {
     font-size: 16px;
 }
 
-.row-3 .parent{ /**장남장녀, 혼주*/
-    margin-top: 10vh;
-    font-family: Gowun Batang;
-    font-weight: 200;
-    letter-spacing: .1rem;
-    font-size: 17px;  
-    height: 60px;
-    display: block;
-}
-
-.row-3 .friends{ /**친구들용*/
-    margin-top: 12vh;
-    letter-spacing: .1rem;
-    height: 60px;
-    display: none;
-}
-
-.row-3 .friends span{
-    padding: 20px;
-}
 
 
 
@@ -232,8 +211,7 @@ img.mobileImg {
 ******************/
 
 .location {
-    margin-top: 2vh;
-    margin-bottom: 4vh;
+    margin-bottom: 12vh;
 }
 
 .location h3 {
@@ -243,14 +221,9 @@ img.mobileImg {
     font-weight: 300;
 }
     
-.location .hotel {
-    width: 60%;
-    margin-top: 20px;
-}
-    
 .location .address {
     text-align: left;
-    width: 60%;
+    max-width: 700px;
     padding-top: 20px;
     padding-left: 3%;
     margin: auto;
@@ -273,25 +246,31 @@ img.mobileImg {
     color: #1A73E8; 
 }
 
-.location .direction a{
-    padding: 18px;
-    margin-right: 2%;
-    border: solid lightgrey 1px;
+.location .button{
+    width: 35%;
+    max-width: 230px;
+    border: solid #BBBBBB 1px;
+    padding: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
     border-radius: 30px;
     background-color: white;
-    color: grey;
-    font-family: Roboto;
+    display: inline-block;
+    
+}
+
+.location .button a{
     text-decoration: none;
+     color: grey;
+    font-family: Roboto;
     font-size: 14px;
 }
 
 
 .location .directionText{
     text-align: left; 
-    margin-top: 14vh;
+    margin-top: 12vh;
     width: 60%;
-    height: 60vh;
-    min-height: 500px;
 }
 
 .location .directionText h4{
@@ -319,7 +298,7 @@ img.mobileImg {
     min-height: 180px;
     max-height: 400px;
     background-color: #3E3D3D;
-    margin-bottom: 10vh;
+    margin-bottom: 13vh;
 }
 
 .timeAndMore div {
@@ -365,8 +344,8 @@ img.mobileImg {
 .contact{
     position: relative;
     width:60%;
-    height:550px;
-    margin: auto; 
+    margin: auto;
+    padding-bottom: 8vh;
 }
 
 .contact h3 {
@@ -378,34 +357,28 @@ img.mobileImg {
 
 .contact .contactInfo{
     position: relative;
-    width: 40%;
+    width: 80%;
     display: inline-block;
     padding:10px;
     margin-top: 25px;
 }
 
 .contact .contactInfo .menu{
-    padding-top:10px;
-    padding-bottom: 10px;
+    padding:15px 25px 15px 25px; 
+    margin: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 100%;
     background-color: #ffe812; /*카카오색*/
     border-radius: 10px;
     font-family: Noto Sans KR;
     color: black;
-    font-size: 14px;
+    font-size: 14px; 
 }
 
 
 .contact button{
-    padding: 12px;
-    width: 100%;
-    border-radius: 10px;
     border:0px;
-    background-color: E2E2E2;
-    color: black;
-    font-size: 14px;
+    padding:10px;
 }
 
 .contact button:hover{
@@ -413,111 +386,11 @@ img.mobileImg {
 }
 
 
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.activeM, .collapsible:hover {
-  background-color: #555;
-}
-
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
-}
-
-/****계좌번호 팝업 메세지****/
-#newPopUp{
-    position: absolute;
-    display: none;
-    width: 80%;
-    max-width: 500px;
-    text-align: left;
-    background-color: white;
-    padding:8%;
-    top:0px;
-    left:12%;
-    z-index: 3;
-    font-family: Noto Sans KR;
-    border: solid lightgrey 1px;;
-    border-radius: 5px;
-    box-sizing: border-box;   
-}
-#newPopUp .title{
-    font-size: 19px;
-    color: lightslategrey;
-    padding-bottom: 8px;
-    padding-top: 8px;
-}
-
-.title span{
-    display: inline-grid;
-}
-
-#newPopUp .title .iconify{
-    background-color: cornflowerblue;
-    padding:13px;
-    border-radius: 50%;
-    color: white;
-    float:left;
-}
-
-#newPopUp .bank{
-    padding: 10px;
-    border:solid lightgrey 1px;
-    margin-top: 10px;
-    border-radius: 10px
-}
-#newPopUp span{
-    top: 10px;
-    display: inline-block;
-    /*display: inline-block;
-    float: left;*/
-}
-
-#newPopUp .name{
-    width: 35%;
-    font-size: 14px;
-    color: grey;
-}
-
-#newPopUp .account{
-    width: 60%;
-    font-size: 14px;
-    color: dimgrey;
-}
-
-#newPopUp .closeButton{
-    background-color:cornflowerblue;
-    padding: 15px;
-    text-align: center;
-    color: white;
-    width: 90%;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-
-#grayout {
-   position: fixed;
-   left: 0px;
-   top: 0px;
-   height: 100%;
-   width: 100%;
-   background-color: black;
-   opacity: 0.5;
-   z-index: 2;
-   display: none;
 }
 
 /****** footer
@@ -654,9 +527,10 @@ mobile interface
     /*location*/
     
     .location {
-        margin-top: 2vh;
-        margin-bottom: 0vh;
+        margin-top: 0vh;
+        margin-bottom: 10vh;    
     }
+    
     .location .address {
         width: 100%;
         padding-left: 0px;
@@ -678,7 +552,7 @@ mobile interface
     
     
     
-/********팬다 요청 예물샷************/
+/********팬다 예물샷************/
     .timeAndMore{
         width: 100%;
         height: 22vh;
@@ -717,14 +591,6 @@ mobile interface
     }
 
 
-    /****pop up****/
-    #newPopUp{
-        padding: 5%;
-        left:5%;
-        width: 90%;
-    }
-    
-
     /*****CONTACT*****/
     .contact{
         width:100%;
@@ -734,10 +600,15 @@ mobile interface
         position: relative;
         width: 70%;
     }
-    
-    
 
-
+    .contact .contactInfo .menu{
+    padding:12px 25px 12px 25px; 
+    margin: 5px;
+    width: 80%;
+    border-radius: 18px;
+    color: black;
+    font-size: 13px;  
+    }
 }
 
 
