@@ -131,7 +131,6 @@ img.mobileImg {
     font-family: Playfair Display;
     font-weight: 100;
     color: white;
-    font-size: 18px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -289,9 +288,8 @@ img.mobileImg {
 .location .directionText{
     text-align: left; 
     margin-top: 14vh;
+    margin-bottom: 16vh;
     width: 60%;
-    height: 60vh;
-    min-height: 500px;
 }
 
 .location .directionText h4{
@@ -384,28 +382,16 @@ img.mobileImg {
     margin-top: 25px;
 }
 
-.contact .contactInfo .menu{
-    padding-top:10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    background-color: #ffe812; /*카카오색*/
-    border-radius: 10px;
-    font-family: Noto Sans KR;
-    color: black;
-    font-size: 14px;
-}
-
-
 .contact button{
     padding: 12px;
     width: 100%;
     border-radius: 10px;
     border:0px;
-    background-color: E2E2E2;
     color: black;
     font-size: 14px;
+    font-family: Noto Sans KR;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .contact button:hover{
@@ -438,15 +424,17 @@ img.mobileImg {
 
 /****계좌번호 팝업 메세지****/
 #newPopUp{
-    position: absolute;
+    position: fixed;
     display: none;
     width: 80%;
-    max-width: 500px;
+    max-width: 400px;
     text-align: left;
     background-color: white;
-    padding:8%;
-    top:0px;
-    left:12%;
+    padding:25px;
+    top:50%;
+    left:50%;
+    margin-left: -15%;
+    margin-top: -20%;
     z-index: 3;
     font-family: Noto Sans KR;
     border: solid lightgrey 1px;;
@@ -664,6 +652,7 @@ mobile interface
     
     .location .directionText{
         width: 100%;
+        margin-bottom: 12vh;   
     }
     
     
@@ -678,7 +667,7 @@ mobile interface
     
     
     
-/********팬다 요청 예물샷************/
+/********팬다 예물샷************/
     .timeAndMore{
         width: 100%;
         height: 22vh;
@@ -719,9 +708,10 @@ mobile interface
 
     /****pop up****/
     #newPopUp{
-        padding: 5%;
-        left:5%;
         width: 90%;
+        padding:20px;
+        top:20%;
+        left:20%;
     }
     
 

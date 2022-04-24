@@ -20,7 +20,7 @@ function reveal() {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
       
-    var elementVisible = 150;
+    var elementVisible = 100;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
@@ -90,22 +90,34 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-function PopUp(){ 
+function PopUp(id){ 
    // document.write("Hello World!");
-    var popUpM = document.getElementById("newPopUp");
+    var popUpM = document.getElementById(id);
     popUpM.style.display = "block";
     
     var grayOut = document.getElementById("grayout");
     grayOut.style.display = "block";    
 }
 
-function Close(){
-    var popUpM = document.getElementById("newPopUp");
+function Close(id){
+    var popUpM = document.getElementById(id);
     popUpM.style.display = "none"; 
     
     var grayOut = document.getElementById("grayout");
     grayOut.style.display = "none";
 }
+
+
+document.addEventListener("mouseup", function(e) {
+    var container = document.getElementById("newPopUp");
+    var grayOut = document.getElementById("grayout");
+    
+    if (!container.contains(e.target)) {
+        container.style.display = "none";
+        grayOut.style.display = "none";
+    }
+});
+
 
 
 function copyToClipboard() {
