@@ -10,11 +10,9 @@
 /* Slideshow container */
 .slideshow-container {
   max-width: 700px;
-  max-height: 350px;
   position: relative;
   margin: auto;
   z-index: 0;
-  overflow: hidden;
 }
 
 .slideshow-container .image{
