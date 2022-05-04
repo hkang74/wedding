@@ -423,7 +423,7 @@ img.mobileImg {
 
 #newPopUp .bank{
     padding: 10px;
-    border:solid lightgrey 0.5px;
+    border:solid lightgrey 1px;
     margin-top: 12px;
     border-radius: 8px
 }
