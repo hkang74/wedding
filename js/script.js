@@ -1,18 +1,3 @@
-//menu toggle
-function toggleMenu(){
-    var menuList = document.getElementById("menuList");
-    
-    if(menuList.style.maxHeight == "400px")
-    {    
-        //document.write("Hello World!");
-         menuList.style.maxHeight = "0px";
-    }else
-    {
-         menuList.style.maxHeight = "400px";
-    }
-}
-
-
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -74,21 +59,14 @@ function myFunction() {
 }
 
 
-/***Collapse Menu****/
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("activeM");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
+function copyToClipboard() {
+ var copyText ="1234567";
+   /* Copy the text NEED TO FIX*/
+  navigator.clipboard.writeText(copyText.value);
+  /* Alert the copied text */
+  alert("1234567 Copied");
 }
+
 
 function PopUp(id){ 
    // document.write("Hello World!");
@@ -107,24 +85,4 @@ function Close(id){
     grayOut.style.display = "none";
 }
 
-
-document.addEventListener("mouseup", function(e) {
-    var container = document.getElementById("newPopUp");
-    var grayOut = document.getElementById("grayout");
-    
-    if (!container.contains(e.target)) {
-        container.style.display = "none";
-        grayOut.style.display = "none";
-    }
-});
-
-
-
-function copyToClipboard() {
- var copyText ="1234567";
-   /* Copy the text NEED TO FIX*/
-  navigator.clipboard.writeText(copyText.value);
-  /* Alert the copied text */
-  alert("1234567 Copied");
-}
 
